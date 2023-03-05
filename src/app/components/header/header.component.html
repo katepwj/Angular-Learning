@@ -1,0 +1,12 @@
+<header>
+
+  <p>{{title.toUpperCase()}}</p>
+  <!-- <p [title]="color">22</p> -->
+
+  <app-button 
+  color="{{showAddTask?'red':'green'}}"
+  text="{{showAddTask?'close':'Add'}}" 
+  (btnClick)="toggleAddTask()">
+
+  </app-button>
+</header>

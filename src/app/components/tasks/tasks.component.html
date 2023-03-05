@@ -1,0 +1,12 @@
+<ol>
+
+  <app-add-task (addTask)="addTask($event)">
+
+  </app-add-task>
+  <app-task-item *ngFor="let task of tasks" [task]="task" (deleteTask)="deleteTask(task)"
+    (toggleTask)="toggleTask(task)">
+  </app-task-item>
+</ol>
+<!-- <a routerLink="/about">go to about page</a> -->
+
+<a [routerLink]="['/about']" routerLinkActive="router-link-active">Go to About</a>

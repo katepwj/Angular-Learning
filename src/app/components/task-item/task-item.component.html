@@ -1,0 +1,18 @@
+ 
+<div 
+class="task" 
+[ngClass]="{reminder: task.reminder}"
+(click)="toggleReminder(task)"
+>
+  <h3>
+    {{task.text}}
+    <p 
+    [ngStyle]="{'color':'red'}"
+    (click)="removeTask(task.id)"
+    
+    >X</p>
+  </h3>
+  <p >
+    {{task.day}}
+  </p>
+</div>
